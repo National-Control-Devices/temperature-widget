@@ -8,8 +8,8 @@ authors: Rajiv
 */
 (function() {
 	
-	var meter, m_Id, m_Att, m_Id, Elem, div;
-	
+    var meter, m_Id, m_Att, m_Id, Elem, div;
+    	
     meter = document.createElement("METER");
     
     meter.setAttribute("min", "0");
@@ -34,11 +34,11 @@ authors: Rajiv
 	document.body.appendChild(div);
 		
 		
-    setInterval(function() {
-    	
-   		Elem.value = (0.5)+(Math.random()*(10));
-   		div.innerHTML = Math.round(Elem.value) +' &#8451;';
-   		
-    }, 1000);
+	setInterval(function() {
+	    	
+		Elem.value = (0.5)+(Math.random()*(10));
+	   	div.innerHTML = Math.round(Elem.value) +' &#8451;';
+	   		
+	    }, 1000);
   
 }).call(this);
